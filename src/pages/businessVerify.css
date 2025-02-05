@@ -1,0 +1,105 @@
+/* Container */
+.business-verify-container {
+    margin-top: 100px;
+    padding: 20px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Form section */
+  .form-section {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* Labels */
+  .form-section label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  /* Required field asterisk */
+  .form-section label span {
+    color: red;
+  }
+  
+  /* Input fields */
+  .form-section input,
+  .form-section select {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  /* Input focus effect */
+  .form-section input:focus,
+  .form-section select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+  }
+  
+  /* Select dropdown */
+  .form-section select {
+    background-color: #fff;
+    cursor: pointer;
+  }
+  
+  /* Button container */
+  .button-container {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  /* Next button styling */
+  .button-container button {
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .button-container button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 768px) {
+    .business-verify-container {
+      padding: 15px;
+      max-width: 90%;
+    }
+  
+    .form-section input,
+    .form-section select {
+      font-size: 14px;
+      padding: 8px;
+    }
+  
+    .button-container button {
+      font-size: 14px;
+      padding: 8px 15px;
+    }
+  }  
+
+
+
+
+  

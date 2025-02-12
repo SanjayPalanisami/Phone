@@ -26,7 +26,7 @@ function App() {
 
   const fetchProfile = async (userId) => {
     try {
-      const response = await axios.get(`http://localhost:5000/api/profile/${userId}`);
+      const response = await axios.get(`https://phone3.onrender.com/api/profile/${userId}`);
       if (response.status === 200 && response.data.profile) {
         const { profile, isNumberVerified, isProfileComplete } = response.data;
         setFullName(profile.full_name || '');
@@ -50,7 +50,7 @@ function App() {
     }
 
     try {
-      const response = await axios.post('http://localhost:5000/api/send-otp', { phoneNumber: contactNumber });
+      const response = await axios.post('https://phone3.onrender.com/api/send-otp', { phoneNumber: contactNumber });
       if (response.status === 200) {
         setOtpSent(true);
         setMessage('OTP sent successfully. Please check your phone.');
@@ -68,7 +68,7 @@ function App() {
     }
 
     try {
-      const response = await axios.post('http://localhost:5000/api/verify-otp', {
+      const response = await axios.post('https://phone3.onrender.com/api/verify-otp', {
         phoneNumber: contactNumber,
         otp: otp,
         userId: userId,
@@ -103,7 +103,7 @@ function App() {
     }
 
     try {
-      const response = await axios.post('http://localhost:5000/api/profile', {
+      const response = await axios.post('https://phone3.onrender.com/api/profile', {
         user_id: userId,
         full_name: fullName,
         business_name: businessName,

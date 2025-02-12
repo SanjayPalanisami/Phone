@@ -33,7 +33,7 @@ const BusinessVerify = () => {
 
   const fetchUserProfile = async (userId) => {
     try {
-      const response = await axios.get(`http://localhost:5000/getUserProfile/${userId}`);
+      const response = await axios.get(`https://phone3.onrender.com/getUserProfile/${userId}`);
       const data = response.data;
 
       if (data) {
@@ -71,7 +71,7 @@ const BusinessVerify = () => {
     const requestData = { ...formData, user_id: userId };
     
     try {
-      const response = await axios.post("http://localhost:5000/verify", requestData);
+      const response = await axios.post("https://phone3.onrender.com/verify", requestData);
       alert("Business verification submitted successfully!");
       setIsDataSubmitted(true); // Show the next button after successful submission
       setGstinVerified(response.data.gstinVerified); // Update GSTIN verification status from backend

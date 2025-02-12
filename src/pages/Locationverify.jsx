@@ -113,7 +113,7 @@ const LocationPage = () => {
     console.log('Submitting:', { userId, lat, lon }); // Log the data being sent
   
     try {
-      const response = await fetch('http://localhost:5000/update-location', {
+      const response = await fetch('https://phone3.onrender.com/update-location', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
